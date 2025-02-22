@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+
+        .navbar{
+            height: 80px;
+            background-color: #082038;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            color: aliceblue;
+            position: relative;
+        }
+        .icon{
+            display: none;
+            color: white;
+        }
+
+        .navbar h1{
+            margin: 0;
+        }
+        .navbar img{
+            height: 60px;
+        }
+        .nav-links{
+            display: flex;
+        }
+               
+        
+        .home{
+            margin-left: 300px;
+            font-size:larger;
+            cursor: pointer;
+        }
+        .home:hover{
+            color: rgb(181, 96, 124);
+            transition: 0.5s;
+           
+        }
+
+        .about{
+            margin-left: 80px;
+            font-size:larger;
+            cursor: pointer;
+        }
+        .about:hover{
+            color: rgb(181, 96, 124);
+            transition: 0.5s;
+        }
+        .services{
+            margin-left: 80px;
+            font-size:larger;
+            cursor: pointer;
+        }
+        .services:hover{
+            color: rgb(181, 96, 124);
+            transition: 0.5s;
+            
+        }
+
+        .contact{
+            margin-left: 80px;
+            font-size:larger;
+            cursor: pointer;
+        }
+        .contact:hover{
+            color: rgb(181, 96, 124);
+            transition: 0.5s;
+            
+        }
+        .search{
+            margin-left: 300px;
+            
+            font-size:xx-large;
+            border-radius: 30px;
+            cursor: pointer;
+            
+        }
+    /*tablets*/
+    @media(min-width:801px) and (max-width:1000px){
+        .search{
+            display: none;
+        }
+        .nav-links{
+            margin-left: 400px;
+        }
+    }
+     /*mobile*/
+     @media(max-width:800px){
+        .nav-links{
+            display: none;
+        }
+        .search{
+            display: none;
+        }
+        .icon{
+            display: block;
+            margin-left: auto;
+            margin-right: 20px;
+            font-size: 50px;
+        }
+     }
+
+        
+
+                             
+         
+                    
+        
+        
+
+    </style>
+
+
+</head>
+<body>
+    <div class="navbar">
+        <img src="specs.png">
+        <h1>Specsworld</h1>
+        <div class="nav-links">
+            <div class="home">Home</div>
+            <div class="about">About</div>
+            <div class="services">Services</div>
+            <div class="contact">Contact</div>
+            <div class="search">
+                <input type="search" placeholder="Search">
+            </div>
+        </div>
+        <img src="menu.png" class="icon">
+        
+    </div>
+   
+</body>
+</html>
