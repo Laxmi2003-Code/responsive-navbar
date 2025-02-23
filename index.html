@@ -23,11 +23,16 @@
             color: aliceblue;
             position: relative;
         }
+        .brand-heading-container{
+            display: flex;
+            align-items: center;
+            gap:30px;
+        }
         .icon{
             display: none;
             color: white;
+            height: 10px;
         }
-
         .navbar h1{
             margin: 0;
         }
@@ -36,11 +41,13 @@
         }
         .nav-links{
             display: flex;
+            gap:30px;
+            align-items: center;
+            margin-right: 80px;
         }
-               
-        
+                             
         .home{
-            margin-left: 300px;
+
             font-size:larger;
             cursor: pointer;
         }
@@ -51,7 +58,7 @@
         }
 
         .about{
-            margin-left: 80px;
+           
             font-size:larger;
             cursor: pointer;
         }
@@ -60,7 +67,7 @@
             transition: 0.5s;
         }
         .services{
-            margin-left: 80px;
+           
             font-size:larger;
             cursor: pointer;
         }
@@ -71,7 +78,7 @@
         }
 
         .contact{
-            margin-left: 80px;
+            
             font-size:larger;
             cursor: pointer;
         }
@@ -81,24 +88,42 @@
             
         }
         .search{
-            margin-left: 300px;
+            
             
             font-size:xx-large;
             border-radius: 30px;
             cursor: pointer;
             
         }
-    /*tablets*/
-    @media(min-width:801px) and (max-width:1000px){
+    /*laptops*/
+    @media(min-width:801px) and (max-width:1200px){
         .search{
             display: none;
         }
+        
+        
+    }
+
+    /*tablet*/
+    @media(min-width:601px) and (max-width:800px){
         .nav-links{
-            margin-left: 400px;
+            display: none;
         }
+
+        .search{
+            display: none;
+
+        }
+        .icon{
+            display: block;
+            margin-left: auto;
+            margin-right: 20px;
+           
+        }
+        
     }
      /*mobile*/
-     @media(max-width:800px){
+     @media(max-width:600px){
         .nav-links{
             display: none;
         }
@@ -109,36 +134,35 @@
             display: block;
             margin-left: auto;
             margin-right: 20px;
-            font-size: 50px;
+            
+        }
+        .navbar h1{
+            font-size: 28px;
         }
      }
-
-        
-
-                             
-         
-                    
-        
-        
-
+            
     </style>
-
-
 </head>
 <body>
     <div class="navbar">
+        <div class="brand-heading-container">
         <img src="specs.png">
+    
         <h1>Specsworld</h1>
+       </div>
         <div class="nav-links">
             <div class="home">Home</div>
             <div class="about">About</div>
             <div class="services">Services</div>
             <div class="contact">Contact</div>
-            <div class="search">
-                <input type="search" placeholder="Search">
-            </div>
+            
         </div>
-        <img src="menu.png" class="icon">
+        <div class="search">
+            <input type="search" placeholder="Search">
+            
+        </div>
+        <img src="more.png" class="icon" height="20px">
+        
         
     </div>
    
